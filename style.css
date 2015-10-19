@@ -1,0 +1,64 @@
+html { overflow-y: hidden; }
+
+.page {
+  bottom: 0;
+  padding-top: 20px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.page h1 {
+  font-size: 60px;
+}
+
+.page a {
+  margin-top: 50px;
+}
+
+#about {
+  color: #333;
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  width: 100%;
+}
+
+.page-home {
+  background: #00D0BC;
+  color: #00907C;
+}
+
+.page-about{
+  background: ##E59400;
+  color: #a55400;
+}
+
+.page-contact{
+  background: #ffa6bb;
+  color: #9e0000;
+}
+
+.page.ng-leave {
+  z-index: 9999;
+}
+
+.page.ng-enter{
+  z-index: 8888;
+}
+
+.page-home.ng-leave{
+  -webkit-transform-origin: 0% 0%;
+  -webkit-animation: rotateFall 1s both ease-in;
+  -moz-transform-origin: 0% 0%;
+  -moz-animation: rotateFall 1s both ease-in;
+  transform-origin: 0% 0%;
+  nimation: rotateFall 1s both ease-in;
+}
+
+.page-home.ng-enter {
+  -webkit-animation: scaleup 0.5s both ease-in;
+  -moz-animation: scaleup 0.5s both ease-in;
+  animation: scaleup 0.5s both ease-in;
+}
